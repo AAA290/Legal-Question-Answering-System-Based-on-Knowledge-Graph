@@ -20,7 +20,7 @@ Unlike general-purpose search engines or LLMs, this system relies on structured 
 * **Structured Answers**: Returns comprehensive information including crime definitions, sentencing standards, and legal basis.
 
 ### 2. Knowledge Graph Visualization
-* **Interactive Graph**: Uses **Apache ECharts** to visualize the legal knowledge graph.
+* **Interactive Graph**: Uses **ECharts** to visualize the legal knowledge graph.
 * **Exploration**: Users can search for specific crimes (e.g., "Theft") and expand nodes to explore relationships between crimes, laws, and punishments.
 
 ### 3. Crime Prediction (Multi-Label Classification)
@@ -31,7 +31,7 @@ Unlike general-purpose search engines or LLMs, this system relies on structured 
 * **Explainable AI**: Visualizes the internal reasoning process using **Mermaid.js**.
 * **Flow Visualization**: Shows the step-by-step pipeline: Entity Recognition -> Question Classification -> Graph Search -> Template Matching -> Answer Generation.
 
-### 5. 🆚 System Comparison
+### 5. System Comparison
 * **Side-by-Side View**: Compares the answers from this Knowledge Graph system against a general LLM (GPT-3.5 via API) to highlight the differences in professionalism and accuracy.
 
 ---
