@@ -1,0 +1,2214 @@
+19-56-2025 15:56:42 django.request:WARNING:Not Found: /
+19-56-2025 15:56:42 django.request:WARNING:Not Found: /
+19-56-2025 15:56:43 django.request:WARNING:Not Found: /favicon.ico
+19-56-2025 15:56:43 django.request:WARNING:Not Found: /favicon.ico
+19-57-2025 15:57:01 asyncio:DEBUG:Using selector: SelectSelector
+19-58-2025 15:58:27 asyncio:DEBUG:Using selector: SelectSelector
+19-58-2025 15:58:27 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-58-2025 15:58:27 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-58-2025 15:58:27 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-58-2025 15:58:27 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DD46CC8>
+19-58-2025 15:58:27 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-58-2025 15:58:27 httpcore.http11:DEBUG:send_request_headers.complete
+19-58-2025 15:58:27 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-58-2025 15:58:27 httpcore.http11:DEBUG:send_request_body.complete
+19-58-2025 15:58:27 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-58-2025 15:58:29 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 07:58:27 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-58-2025 15:58:29 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-58-2025 15:58:29 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-58-2025 15:58:29 httpcore.http11:DEBUG:receive_response_body.complete
+19-58-2025 15:58:29 httpcore.http11:DEBUG:response_closed.started
+19-58-2025 15:58:29 httpcore.http11:DEBUG:response_closed.complete
+19-58-2025 15:58:29 httpcore.connection:DEBUG:close.started
+19-58-2025 15:58:29 httpcore.connection:DEBUG:close.complete
+19-58-2025 15:58:29 django.request:ERROR:Service Unavailable: /qa/
+19-58-2025 15:58:35 asyncio:DEBUG:Using selector: SelectSelector
+19-58-2025 15:58:35 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-58-2025 15:58:35 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-58-2025 15:58:35 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-58-2025 15:58:35 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DEADAC8>
+19-58-2025 15:58:35 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-58-2025 15:58:35 httpcore.http11:DEBUG:send_request_headers.complete
+19-58-2025 15:58:35 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-58-2025 15:58:35 httpcore.http11:DEBUG:send_request_body.complete
+19-58-2025 15:58:35 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-58-2025 15:58:37 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 07:58:34 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-58-2025 15:58:37 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-58-2025 15:58:37 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-58-2025 15:58:37 httpcore.http11:DEBUG:receive_response_body.complete
+19-58-2025 15:58:37 httpcore.http11:DEBUG:response_closed.started
+19-58-2025 15:58:37 httpcore.http11:DEBUG:response_closed.complete
+19-58-2025 15:58:37 httpcore.connection:DEBUG:close.started
+19-58-2025 15:58:37 httpcore.connection:DEBUG:close.complete
+19-58-2025 15:58:37 django.request:ERROR:Service Unavailable: /qa/
+19-58-2025 15:58:41 asyncio:DEBUG:Using selector: SelectSelector
+19-58-2025 15:58:41 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-58-2025 15:58:41 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-58-2025 15:58:41 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-58-2025 15:58:41 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DFD5588>
+19-58-2025 15:58:41 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-58-2025 15:58:41 httpcore.http11:DEBUG:send_request_headers.complete
+19-58-2025 15:58:41 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-58-2025 15:58:41 httpcore.http11:DEBUG:send_request_body.complete
+19-58-2025 15:58:41 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-58-2025 15:58:43 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 07:58:40 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-58-2025 15:58:43 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-58-2025 15:58:43 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-58-2025 15:58:43 httpcore.http11:DEBUG:receive_response_body.complete
+19-58-2025 15:58:43 httpcore.http11:DEBUG:response_closed.started
+19-58-2025 15:58:43 httpcore.http11:DEBUG:response_closed.complete
+19-58-2025 15:58:43 httpcore.connection:DEBUG:close.started
+19-58-2025 15:58:43 httpcore.connection:DEBUG:close.complete
+19-58-2025 15:58:43 django.request:ERROR:Service Unavailable: /qa/
+19-59-2025 15:59:59 asyncio:DEBUG:Using selector: SelectSelector
+19-00-2025 16:00:18 asyncio:DEBUG:Using selector: SelectSelector
+19-00-2025 16:00:18 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-00-2025 16:00:18 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-00-2025 16:00:18 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-00-2025 16:00:18 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DE4AE88>
+19-00-2025 16:00:18 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-00-2025 16:00:18 httpcore.http11:DEBUG:send_request_headers.complete
+19-00-2025 16:00:18 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-00-2025 16:00:18 httpcore.http11:DEBUG:send_request_body.complete
+19-00-2025 16:00:18 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-00-2025 16:00:24 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:00:17 GMT'), (b'server', b'uvicorn'), (b'content-length', b'34'), (b'content-type', b'application/json')])
+19-00-2025 16:00:24 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-00-2025 16:00:24 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-00-2025 16:00:24 httpcore.http11:DEBUG:receive_response_body.complete
+19-00-2025 16:00:24 httpcore.http11:DEBUG:response_closed.started
+19-00-2025 16:00:24 httpcore.http11:DEBUG:response_closed.complete
+19-00-2025 16:00:24 httpcore.connection:DEBUG:close.started
+19-00-2025 16:00:24 httpcore.connection:DEBUG:close.complete
+19-00-2025 16:00:49 asyncio:DEBUG:Using selector: SelectSelector
+19-00-2025 16:00:49 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-00-2025 16:00:49 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-00-2025 16:00:49 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-00-2025 16:00:49 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DDCA2C8>
+19-00-2025 16:00:49 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-00-2025 16:00:49 httpcore.http11:DEBUG:send_request_headers.complete
+19-00-2025 16:00:49 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-00-2025 16:00:49 httpcore.http11:DEBUG:send_request_body.complete
+19-00-2025 16:00:49 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-00-2025 16:00:51 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:00:49 GMT'), (b'server', b'uvicorn'), (b'content-length', b'34'), (b'content-type', b'application/json')])
+19-00-2025 16:00:51 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-00-2025 16:00:51 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-00-2025 16:00:51 httpcore.http11:DEBUG:receive_response_body.complete
+19-00-2025 16:00:51 httpcore.http11:DEBUG:response_closed.started
+19-00-2025 16:00:51 httpcore.http11:DEBUG:response_closed.complete
+19-00-2025 16:00:51 httpcore.connection:DEBUG:close.started
+19-00-2025 16:00:51 httpcore.connection:DEBUG:close.complete
+19-00-2025 16:00:55 asyncio:DEBUG:Using selector: SelectSelector
+19-00-2025 16:00:55 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-00-2025 16:00:55 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-00-2025 16:00:55 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-00-2025 16:00:55 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DEADB88>
+19-00-2025 16:00:55 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-00-2025 16:00:55 httpcore.http11:DEBUG:send_request_headers.complete
+19-00-2025 16:00:55 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-00-2025 16:00:55 httpcore.http11:DEBUG:send_request_body.complete
+19-00-2025 16:00:55 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-00-2025 16:00:55 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:00:54 GMT'), (b'server', b'uvicorn'), (b'content-length', b'227'), (b'content-type', b'application/json')])
+19-00-2025 16:00:55 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-00-2025 16:00:55 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-00-2025 16:00:55 httpcore.http11:DEBUG:receive_response_body.complete
+19-00-2025 16:00:55 httpcore.http11:DEBUG:response_closed.started
+19-00-2025 16:00:55 httpcore.http11:DEBUG:response_closed.complete
+19-00-2025 16:00:55 httpcore.connection:DEBUG:close.started
+19-00-2025 16:00:55 httpcore.connection:DEBUG:close.complete
+19-03-2025 16:03:32 asyncio:DEBUG:Using selector: SelectSelector
+19-03-2025 16:03:36 asyncio:DEBUG:Using selector: SelectSelector
+19-03-2025 16:03:36 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-03-2025 16:03:36 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-03-2025 16:03:36 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-03-2025 16:03:36 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DF29048>
+19-03-2025 16:03:36 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-03-2025 16:03:36 httpcore.http11:DEBUG:send_request_headers.complete
+19-03-2025 16:03:36 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-03-2025 16:03:36 httpcore.http11:DEBUG:send_request_body.complete
+19-03-2025 16:03:36 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-03-2025 16:03:38 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:03:36 GMT'), (b'server', b'uvicorn'), (b'content-length', b'158'), (b'content-type', b'application/json')])
+19-03-2025 16:03:38 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-03-2025 16:03:38 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-03-2025 16:03:38 httpcore.http11:DEBUG:receive_response_body.complete
+19-03-2025 16:03:38 httpcore.http11:DEBUG:response_closed.started
+19-03-2025 16:03:38 httpcore.http11:DEBUG:response_closed.complete
+19-03-2025 16:03:38 httpcore.connection:DEBUG:close.started
+19-03-2025 16:03:38 httpcore.connection:DEBUG:close.complete
+19-04-2025 16:04:04 asyncio:DEBUG:Using selector: SelectSelector
+19-04-2025 16:04:04 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-04-2025 16:04:04 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-04-2025 16:04:04 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-04-2025 16:04:04 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DF13288>
+19-04-2025 16:04:04 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-04-2025 16:04:04 httpcore.http11:DEBUG:send_request_headers.complete
+19-04-2025 16:04:04 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-04-2025 16:04:04 httpcore.http11:DEBUG:send_request_body.complete
+19-04-2025 16:04:04 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-04-2025 16:04:05 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 08:04:04 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-04-2025 16:04:05 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-04-2025 16:04:05 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-04-2025 16:04:05 httpcore.http11:DEBUG:receive_response_body.complete
+19-04-2025 16:04:05 httpcore.http11:DEBUG:response_closed.started
+19-04-2025 16:04:05 httpcore.http11:DEBUG:response_closed.complete
+19-04-2025 16:04:05 httpcore.connection:DEBUG:close.started
+19-04-2025 16:04:05 httpcore.connection:DEBUG:close.complete
+19-04-2025 16:04:05 django.request:ERROR:Service Unavailable: /qa/
+19-05-2025 16:05:00 asyncio:DEBUG:Using selector: SelectSelector
+19-05-2025 16:05:00 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-05-2025 16:05:00 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-05-2025 16:05:00 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-05-2025 16:05:00 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DDCAFC8>
+19-05-2025 16:05:00 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-05-2025 16:05:00 httpcore.http11:DEBUG:send_request_headers.complete
+19-05-2025 16:05:00 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-05-2025 16:05:00 httpcore.http11:DEBUG:send_request_body.complete
+19-05-2025 16:05:00 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-05-2025 16:05:01 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 08:05:00 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-05-2025 16:05:01 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-05-2025 16:05:01 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-05-2025 16:05:01 httpcore.http11:DEBUG:receive_response_body.complete
+19-05-2025 16:05:01 httpcore.http11:DEBUG:response_closed.started
+19-05-2025 16:05:01 httpcore.http11:DEBUG:response_closed.complete
+19-05-2025 16:05:01 httpcore.connection:DEBUG:close.started
+19-05-2025 16:05:01 httpcore.connection:DEBUG:close.complete
+19-05-2025 16:05:01 django.request:ERROR:Service Unavailable: /qa/
+19-06-2025 16:06:42 asyncio:DEBUG:Using selector: SelectSelector
+19-06-2025 16:06:42 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-06-2025 16:06:42 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-06-2025 16:06:42 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-06-2025 16:06:42 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DEF8488>
+19-06-2025 16:06:42 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-06-2025 16:06:42 httpcore.http11:DEBUG:send_request_headers.complete
+19-06-2025 16:06:42 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-06-2025 16:06:42 httpcore.http11:DEBUG:send_request_body.complete
+19-06-2025 16:06:42 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-06-2025 16:06:42 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 08:06:41 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-06-2025 16:06:42 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-06-2025 16:06:42 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-06-2025 16:06:42 httpcore.http11:DEBUG:receive_response_body.complete
+19-06-2025 16:06:42 httpcore.http11:DEBUG:response_closed.started
+19-06-2025 16:06:42 httpcore.http11:DEBUG:response_closed.complete
+19-06-2025 16:06:42 httpcore.connection:DEBUG:close.started
+19-06-2025 16:06:42 httpcore.connection:DEBUG:close.complete
+19-06-2025 16:06:42 django.request:ERROR:Service Unavailable: /qa/
+19-11-2025 16:11:31 asyncio:DEBUG:Using selector: SelectSelector
+19-11-2025 16:11:34 asyncio:DEBUG:Using selector: SelectSelector
+19-11-2025 16:11:34 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-11-2025 16:11:34 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-11-2025 16:11:34 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-11-2025 16:11:34 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DFD5A48>
+19-11-2025 16:11:34 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-11-2025 16:11:34 httpcore.http11:DEBUG:send_request_headers.complete
+19-11-2025 16:11:34 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-11-2025 16:11:34 httpcore.http11:DEBUG:send_request_body.complete
+19-11-2025 16:11:34 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-11-2025 16:11:42 asyncio:DEBUG:Using selector: SelectSelector
+19-11-2025 16:11:42 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-11-2025 16:11:42 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-11-2025 16:11:42 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-11-2025 16:11:43 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DFB1D08>
+19-11-2025 16:11:43 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-11-2025 16:11:43 httpcore.http11:DEBUG:send_request_headers.complete
+19-11-2025 16:11:43 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-11-2025 16:11:43 httpcore.http11:DEBUG:send_request_body.complete
+19-11-2025 16:11:43 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-11-2025 16:11:50 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 08:11:33 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-11-2025 16:11:50 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-11-2025 16:11:50 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-11-2025 16:11:50 httpcore.http11:DEBUG:receive_response_body.complete
+19-11-2025 16:11:50 httpcore.http11:DEBUG:response_closed.started
+19-11-2025 16:11:50 httpcore.http11:DEBUG:response_closed.complete
+19-11-2025 16:11:50 httpcore.connection:DEBUG:close.started
+19-11-2025 16:11:50 httpcore.connection:DEBUG:close.complete
+19-11-2025 16:11:50 django.request:ERROR:Service Unavailable: /qa/
+19-12-2025 16:12:00 asyncio:DEBUG:Using selector: SelectSelector
+19-12-2025 16:12:05 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 08:11:33 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-12-2025 16:12:05 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-12-2025 16:12:05 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-12-2025 16:12:05 httpcore.http11:DEBUG:receive_response_body.complete
+19-12-2025 16:12:05 httpcore.http11:DEBUG:response_closed.started
+19-12-2025 16:12:05 httpcore.http11:DEBUG:response_closed.complete
+19-12-2025 16:12:05 httpcore.connection:DEBUG:close.started
+19-12-2025 16:12:05 httpcore.connection:DEBUG:close.complete
+19-12-2025 16:12:05 django.request:ERROR:Service Unavailable: /qa/
+19-14-2025 16:14:38 asyncio:DEBUG:Using selector: SelectSelector
+19-14-2025 16:14:47 asyncio:DEBUG:Using selector: SelectSelector
+19-14-2025 16:14:47 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-14-2025 16:14:47 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-14-2025 16:14:47 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-14-2025 16:14:47 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DE472C8>
+19-14-2025 16:14:47 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-14-2025 16:14:47 httpcore.http11:DEBUG:send_request_headers.complete
+19-14-2025 16:14:47 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-14-2025 16:14:47 httpcore.http11:DEBUG:send_request_body.complete
+19-14-2025 16:14:47 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-15-2025 16:15:03 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 500, b'Internal Server Error', [(b'date', b'Sat, 19 Apr 2025 08:14:47 GMT'), (b'server', b'uvicorn'), (b'content-length', b'21'), (b'content-type', b'text/plain; charset=utf-8')])
+19-15-2025 16:15:03 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 500 Internal Server Error"
+19-15-2025 16:15:03 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-15-2025 16:15:03 httpcore.http11:DEBUG:receive_response_body.complete
+19-15-2025 16:15:03 httpcore.http11:DEBUG:response_closed.started
+19-15-2025 16:15:03 httpcore.http11:DEBUG:response_closed.complete
+19-15-2025 16:15:03 httpcore.connection:DEBUG:close.started
+19-15-2025 16:15:03 httpcore.connection:DEBUG:close.complete
+19-15-2025 16:15:03 django.request:ERROR:Service Unavailable: /qa/
+19-24-2025 16:24:05 asyncio:DEBUG:Using selector: SelectSelector
+19-24-2025 16:24:15 asyncio:DEBUG:Using selector: SelectSelector
+19-24-2025 16:24:15 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-24-2025 16:24:15 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-24-2025 16:24:15 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-24-2025 16:24:15 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DFF4B08>
+19-24-2025 16:24:15 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-24-2025 16:24:15 httpcore.http11:DEBUG:send_request_headers.complete
+19-24-2025 16:24:15 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-24-2025 16:24:15 httpcore.http11:DEBUG:send_request_body.complete
+19-24-2025 16:24:15 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-24-2025 16:24:31 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:24:15 GMT'), (b'server', b'uvicorn'), (b'content-length', b'64'), (b'content-type', b'application/json')])
+19-24-2025 16:24:31 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-24-2025 16:24:31 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-24-2025 16:24:31 httpcore.http11:DEBUG:receive_response_body.complete
+19-24-2025 16:24:31 httpcore.http11:DEBUG:response_closed.started
+19-24-2025 16:24:31 httpcore.http11:DEBUG:response_closed.complete
+19-24-2025 16:24:31 httpcore.connection:DEBUG:close.started
+19-24-2025 16:24:31 httpcore.connection:DEBUG:close.complete
+19-25-2025 16:25:19 asyncio:DEBUG:Using selector: SelectSelector
+19-25-2025 16:25:19 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-25-2025 16:25:19 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-25-2025 16:25:19 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-25-2025 16:25:19 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DEFCE88>
+19-25-2025 16:25:19 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-25-2025 16:25:19 httpcore.http11:DEBUG:send_request_headers.complete
+19-25-2025 16:25:19 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-25-2025 16:25:19 httpcore.http11:DEBUG:send_request_body.complete
+19-25-2025 16:25:19 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-25-2025 16:25:35 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:25:18 GMT'), (b'server', b'uvicorn'), (b'content-length', b'64'), (b'content-type', b'application/json')])
+19-25-2025 16:25:35 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-25-2025 16:25:35 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-25-2025 16:25:35 httpcore.http11:DEBUG:receive_response_body.complete
+19-25-2025 16:25:35 httpcore.http11:DEBUG:response_closed.started
+19-25-2025 16:25:35 httpcore.http11:DEBUG:response_closed.complete
+19-25-2025 16:25:35 httpcore.connection:DEBUG:close.started
+19-25-2025 16:25:35 httpcore.connection:DEBUG:close.complete
+19-28-2025 16:28:15 asyncio:DEBUG:Using selector: SelectSelector
+19-28-2025 16:28:15 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-28-2025 16:28:15 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-28-2025 16:28:16 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-28-2025 16:28:16 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DF134C8>
+19-28-2025 16:28:16 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-28-2025 16:28:16 httpcore.http11:DEBUG:send_request_headers.complete
+19-28-2025 16:28:16 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-28-2025 16:28:16 httpcore.http11:DEBUG:send_request_body.complete
+19-28-2025 16:28:16 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-28-2025 16:28:17 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:28:15 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5011'), (b'content-type', b'application/json')])
+19-28-2025 16:28:17 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-28-2025 16:28:17 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-28-2025 16:28:17 httpcore.http11:DEBUG:receive_response_body.complete
+19-28-2025 16:28:17 httpcore.http11:DEBUG:response_closed.started
+19-28-2025 16:28:17 httpcore.http11:DEBUG:response_closed.complete
+19-28-2025 16:28:17 httpcore.connection:DEBUG:close.started
+19-28-2025 16:28:17 httpcore.connection:DEBUG:close.complete
+19-28-2025 16:28:42 asyncio:DEBUG:Using selector: SelectSelector
+19-29-2025 16:29:05 asyncio:DEBUG:Using selector: SelectSelector
+19-29-2025 16:29:05 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-29-2025 16:29:05 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-29-2025 16:29:05 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-29-2025 16:29:05 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DF29508>
+19-29-2025 16:29:05 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-29-2025 16:29:05 httpcore.http11:DEBUG:send_request_headers.complete
+19-29-2025 16:29:05 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-29-2025 16:29:05 httpcore.http11:DEBUG:send_request_body.complete
+19-29-2025 16:29:05 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-29-2025 16:29:07 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:29:05 GMT'), (b'server', b'uvicorn'), (b'content-length', b'158'), (b'content-type', b'application/json')])
+19-29-2025 16:29:07 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-29-2025 16:29:07 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-29-2025 16:29:07 httpcore.http11:DEBUG:receive_response_body.complete
+19-29-2025 16:29:07 httpcore.http11:DEBUG:response_closed.started
+19-29-2025 16:29:07 httpcore.http11:DEBUG:response_closed.complete
+19-29-2025 16:29:07 httpcore.connection:DEBUG:close.started
+19-29-2025 16:29:07 httpcore.connection:DEBUG:close.complete
+19-29-2025 16:29:15 asyncio:DEBUG:Using selector: SelectSelector
+19-29-2025 16:29:15 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-29-2025 16:29:15 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-29-2025 16:29:15 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-29-2025 16:29:15 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DF786C8>
+19-29-2025 16:29:15 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-29-2025 16:29:15 httpcore.http11:DEBUG:send_request_headers.complete
+19-29-2025 16:29:15 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-29-2025 16:29:15 httpcore.http11:DEBUG:send_request_body.complete
+19-29-2025 16:29:15 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-29-2025 16:29:16 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:29:15 GMT'), (b'server', b'uvicorn'), (b'content-length', b'5011'), (b'content-type', b'application/json')])
+19-29-2025 16:29:16 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-29-2025 16:29:16 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-29-2025 16:29:16 httpcore.http11:DEBUG:receive_response_body.complete
+19-29-2025 16:29:16 httpcore.http11:DEBUG:response_closed.started
+19-29-2025 16:29:16 httpcore.http11:DEBUG:response_closed.complete
+19-29-2025 16:29:16 httpcore.connection:DEBUG:close.started
+19-29-2025 16:29:16 httpcore.connection:DEBUG:close.complete
+19-33-2025 16:33:51 asyncio:DEBUG:Using selector: SelectSelector
+19-34-2025 16:34:04 asyncio:DEBUG:Using selector: SelectSelector
+19-34-2025 16:34:04 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-34-2025 16:34:04 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-34-2025 16:34:04 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-34-2025 16:34:04 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DFF4048>
+19-34-2025 16:34:04 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-34-2025 16:34:04 httpcore.http11:DEBUG:send_request_headers.complete
+19-34-2025 16:34:04 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-34-2025 16:34:04 httpcore.http11:DEBUG:send_request_body.complete
+19-34-2025 16:34:04 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-34-2025 16:34:04 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:34:03 GMT'), (b'server', b'uvicorn'), (b'content-length', b'108'), (b'content-type', b'application/json')])
+19-34-2025 16:34:04 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/crimes_prediction "HTTP/1.1 200 OK"
+19-34-2025 16:34:04 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-34-2025 16:34:04 httpcore.http11:DEBUG:receive_response_body.complete
+19-34-2025 16:34:04 httpcore.http11:DEBUG:response_closed.started
+19-34-2025 16:34:04 httpcore.http11:DEBUG:response_closed.complete
+19-34-2025 16:34:04 httpcore.connection:DEBUG:close.started
+19-34-2025 16:34:04 httpcore.connection:DEBUG:close.complete
+19-36-2025 16:36:36 asyncio:DEBUG:Using selector: SelectSelector
+19-36-2025 16:36:36 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-36-2025 16:36:36 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-36-2025 16:36:36 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-36-2025 16:36:36 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DF29B88>
+19-36-2025 16:36:36 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-36-2025 16:36:36 httpcore.http11:DEBUG:send_request_headers.complete
+19-36-2025 16:36:36 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-36-2025 16:36:36 httpcore.http11:DEBUG:send_request_body.complete
+19-36-2025 16:36:36 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-36-2025 16:36:37 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:36:36 GMT'), (b'server', b'uvicorn'), (b'content-length', b'48'), (b'content-type', b'application/json')])
+19-36-2025 16:36:37 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/crimes_prediction "HTTP/1.1 200 OK"
+19-36-2025 16:36:37 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-36-2025 16:36:37 httpcore.http11:DEBUG:receive_response_body.complete
+19-36-2025 16:36:37 httpcore.http11:DEBUG:response_closed.started
+19-36-2025 16:36:37 httpcore.http11:DEBUG:response_closed.complete
+19-36-2025 16:36:37 httpcore.connection:DEBUG:close.started
+19-36-2025 16:36:37 httpcore.connection:DEBUG:close.complete
+19-39-2025 16:39:37 asyncio:DEBUG:Using selector: SelectSelector
+19-40-2025 16:40:57 asyncio:DEBUG:Using selector: SelectSelector
+19-40-2025 16:40:57 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-40-2025 16:40:57 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-40-2025 16:40:58 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-40-2025 16:40:58 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DEFDAC8>
+19-40-2025 16:40:58 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-40-2025 16:40:58 httpcore.http11:DEBUG:send_request_headers.complete
+19-40-2025 16:40:58 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-40-2025 16:40:58 httpcore.http11:DEBUG:send_request_body.complete
+19-40-2025 16:40:58 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-40-2025 16:40:59 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:40:57 GMT'), (b'server', b'uvicorn'), (b'content-length', b'158'), (b'content-type', b'application/json')])
+19-40-2025 16:40:59 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-40-2025 16:40:59 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-40-2025 16:40:59 httpcore.http11:DEBUG:receive_response_body.complete
+19-40-2025 16:40:59 httpcore.http11:DEBUG:response_closed.started
+19-40-2025 16:40:59 httpcore.http11:DEBUG:response_closed.complete
+19-40-2025 16:40:59 root:INFO:<bound method Response.json of <Response [200 OK]>>
+19-40-2025 16:40:59 httpcore.connection:DEBUG:close.started
+19-40-2025 16:40:59 httpcore.connection:DEBUG:close.complete
+19-40-2025 16:40:59 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+19-40-2025 16:40:59 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-40-2025 16:40:59 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+19-40-2025 16:40:59 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-40-2025 16:40:59 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含什么罪'}], 'model': 'gpt-3.5-turbo'}}
+19-40-2025 16:40:59 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-40-2025 16:40:59 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-41-2025 16:41:01 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-41-2025 16:41:01 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-41-2025 16:41:01 openai._base_client:DEBUG:1 retry left
+19-41-2025 16:41:01 openai._base_client:INFO:Retrying request to /chat/completions in 0.880380 seconds
+19-41-2025 16:41:02 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含什么罪'}], 'model': 'gpt-3.5-turbo'}}
+19-41-2025 16:41:02 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-41-2025 16:41:02 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-41-2025 16:41:04 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-41-2025 16:41:04 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-41-2025 16:41:04 openai._base_client:DEBUG:0 retries left
+19-41-2025 16:41:04 openai._base_client:INFO:Retrying request to /chat/completions in 1.750859 seconds
+19-41-2025 16:41:06 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含什么罪'}], 'model': 'gpt-3.5-turbo'}}
+19-41-2025 16:41:06 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-41-2025 16:41:06 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-41-2025 16:41:08 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-41-2025 16:41:08 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-41-2025 16:41:08 openai._base_client:DEBUG:Raising connection error
+19-41-2025 16:41:08 django.request:ERROR:Internal Server Error: /qa_gpt/
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my_documents\lqa_project\qa\views.py", line 177, in qa_gpt
+    {"role": "user", "content": question}
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\resources\chat\completions.py", line 681, in create
+    stream_cls=Stream[ChatCompletionChunk],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1271, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 947, in request
+    remaining_retries=remaining_retries,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1008, in _request
+    response_headers=None,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1085, in _retry_request
+    stream_cls=stream_cls,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1008, in _request
+    response_headers=None,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1085, in _retry_request
+    stream_cls=stream_cls,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1012, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+19-42-2025 16:42:30 asyncio:DEBUG:Using selector: SelectSelector
+19-42-2025 16:42:30 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-42-2025 16:42:30 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-42-2025 16:42:30 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-42-2025 16:42:30 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DE45048>
+19-42-2025 16:42:30 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-42-2025 16:42:30 httpcore.http11:DEBUG:send_request_headers.complete
+19-42-2025 16:42:30 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-42-2025 16:42:30 httpcore.http11:DEBUG:send_request_body.complete
+19-42-2025 16:42:30 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-42-2025 16:42:31 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:42:29 GMT'), (b'server', b'uvicorn'), (b'content-length', b'158'), (b'content-type', b'application/json')])
+19-42-2025 16:42:31 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-42-2025 16:42:31 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-42-2025 16:42:31 httpcore.http11:DEBUG:receive_response_body.complete
+19-42-2025 16:42:31 httpcore.http11:DEBUG:response_closed.started
+19-42-2025 16:42:31 httpcore.http11:DEBUG:response_closed.complete
+19-42-2025 16:42:31 root:INFO:<bound method Response.json of <Response [200 OK]>>
+19-42-2025 16:42:31 httpcore.connection:DEBUG:close.started
+19-42-2025 16:42:31 httpcore.connection:DEBUG:close.complete
+19-42-2025 16:42:31 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+19-42-2025 16:42:31 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-42-2025 16:42:31 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+19-42-2025 16:42:31 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-42-2025 16:42:31 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含什么罪'}], 'model': 'gpt-3.5-turbo'}}
+19-42-2025 16:42:31 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-42-2025 16:42:31 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-42-2025 16:42:33 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-42-2025 16:42:33 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-42-2025 16:42:33 openai._base_client:DEBUG:1 retry left
+19-42-2025 16:42:33 openai._base_client:INFO:Retrying request to /chat/completions in 0.958751 seconds
+19-42-2025 16:42:34 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含什么罪'}], 'model': 'gpt-3.5-turbo'}}
+19-42-2025 16:42:34 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-42-2025 16:42:34 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-42-2025 16:42:36 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-42-2025 16:42:36 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-42-2025 16:42:36 openai._base_client:DEBUG:0 retries left
+19-42-2025 16:42:36 openai._base_client:INFO:Retrying request to /chat/completions in 1.925239 seconds
+19-42-2025 16:42:38 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含什么罪'}], 'model': 'gpt-3.5-turbo'}}
+19-42-2025 16:42:38 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-42-2025 16:42:38 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-42-2025 16:42:40 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-42-2025 16:42:40 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-42-2025 16:42:40 openai._base_client:DEBUG:Raising connection error
+19-42-2025 16:42:40 django.request:ERROR:Internal Server Error: /qa_gpt/
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my_documents\lqa_project\qa\views.py", line 177, in qa_gpt
+    {"role": "user", "content": question}
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\resources\chat\completions.py", line 681, in create
+    stream_cls=Stream[ChatCompletionChunk],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1271, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 947, in request
+    remaining_retries=remaining_retries,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1008, in _request
+    response_headers=None,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1085, in _retry_request
+    stream_cls=stream_cls,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1008, in _request
+    response_headers=None,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1085, in _retry_request
+    stream_cls=stream_cls,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1012, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+19-45-2025 16:45:35 asyncio:DEBUG:Using selector: SelectSelector
+19-45-2025 16:45:35 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=False http2=False
+19-45-2025 16:45:35 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-45-2025 16:45:35 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+19-45-2025 16:45:35 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000002CA6DD17E08>
+19-45-2025 16:45:35 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+19-45-2025 16:45:35 httpcore.http11:DEBUG:send_request_headers.complete
+19-45-2025 16:45:35 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+19-45-2025 16:45:35 httpcore.http11:DEBUG:send_request_body.complete
+19-45-2025 16:45:35 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+19-45-2025 16:45:36 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Sat, 19 Apr 2025 08:45:35 GMT'), (b'server', b'uvicorn'), (b'content-length', b'64'), (b'content-type', b'application/json')])
+19-45-2025 16:45:36 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa "HTTP/1.1 200 OK"
+19-45-2025 16:45:36 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+19-45-2025 16:45:36 httpcore.http11:DEBUG:receive_response_body.complete
+19-45-2025 16:45:36 httpcore.http11:DEBUG:response_closed.started
+19-45-2025 16:45:36 httpcore.http11:DEBUG:response_closed.complete
+19-45-2025 16:45:36 httpcore.connection:DEBUG:close.started
+19-45-2025 16:45:36 httpcore.connection:DEBUG:close.complete
+19-45-2025 16:45:36 root:INFO:<bound method Response.json of <Response [200 OK]>>
+19-45-2025 16:45:36 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+19-45-2025 16:45:36 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-45-2025 16:45:36 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+19-45-2025 16:45:36 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+19-45-2025 16:45:36 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含哪些罪名'}], 'model': 'gpt-3.5-turbo'}}
+19-45-2025 16:45:36 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-45-2025 16:45:36 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-45-2025 16:45:38 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-45-2025 16:45:38 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-45-2025 16:45:38 openai._base_client:DEBUG:1 retry left
+19-45-2025 16:45:38 openai._base_client:INFO:Retrying request to /chat/completions in 0.855927 seconds
+19-45-2025 16:45:39 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含哪些罪名'}], 'model': 'gpt-3.5-turbo'}}
+19-45-2025 16:45:39 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-45-2025 16:45:39 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-45-2025 16:45:41 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-45-2025 16:45:41 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-45-2025 16:45:41 openai._base_client:DEBUG:0 retries left
+19-45-2025 16:45:41 openai._base_client:INFO:Retrying request to /chat/completions in 1.880687 seconds
+19-45-2025 16:45:43 openai._base_client:DEBUG:Request options: {'method': 'post', 'url': '/chat/completions', 'files': None, 'json_data': {'messages': [{'role': 'user', 'content': '危害公共安全罪包含哪些罪名'}], 'model': 'gpt-3.5-turbo'}}
+19-45-2025 16:45:43 openai._base_client:DEBUG:Sending HTTP Request: POST https://api.chatanywhere.tech/v1/chat/completions
+19-45-2025 16:45:43 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=7890 local_address=None timeout=5.0 socket_options=None
+19-45-2025 16:45:45 httpcore.connection:DEBUG:connect_tcp.failed exception=ConnectError(ConnectionRefusedError(10061, '由于目标计算机积极拒绝，无法连接。', None, 10061, None))
+19-45-2025 16:45:45 openai._base_client:DEBUG:Encountered Exception
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+19-45-2025 16:45:45 openai._base_client:DEBUG:Raising connection error
+19-45-2025 16:45:45 django.request:ERROR:Internal Server Error: /qa_gpt/
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 10, in map_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 103, in connect_tcp
+    source_address=source_address,
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 728, in create_connection
+    raise err
+  File "D:\anaconda\envs\legal_qa\lib\socket.py", line 716, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 60, in map_httpcore_exceptions
+    yield
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 262, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection_pool.py", line 245, in handle_request
+    response = connection.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\http_proxy.py", line 272, in handle_request
+    connect_request
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 92, in handle_request
+    raise exc
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 69, in handle_request
+    stream = self._connect(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_sync\connection.py", line 117, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_backends\sync.py", line 107, in connect_tcp
+    sock.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpcore\_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 981, in _request
+    **kwargs,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 905, in send
+    history=[],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 932, in _send_handling_auth
+    history=history,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 966, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_client.py", line 1002, in _send_single_request
+    response = transport.handle_request(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 218, in handle_request
+    resp = self._pool.handle_request(req)
+  File "D:\anaconda\envs\legal_qa\lib\contextlib.py", line 130, in __exit__
+    self.gen.throw(type, value, traceback)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\httpx\_transports\default.py", line 77, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my_documents\lqa_project\qa\views.py", line 177, in qa_gpt
+    {"role": "user", "content": question}
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_utils\_utils.py", line 277, in wrapper
+    return func(*args, **kwargs)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\resources\chat\completions.py", line 681, in create
+    stream_cls=Stream[ChatCompletionChunk],
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1271, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 947, in request
+    remaining_retries=remaining_retries,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1008, in _request
+    response_headers=None,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1085, in _retry_request
+    stream_cls=stream_cls,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1008, in _request
+    response_headers=None,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1085, in _retry_request
+    stream_cls=stream_cls,
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_base_client.py", line 1012, in _request
+    raise APIConnectionError(request=request) from err
+openai.APIConnectionError: Connection error.
+19-46-2025 16:46:44 asyncio:DEBUG:Using selector: SelectSelector

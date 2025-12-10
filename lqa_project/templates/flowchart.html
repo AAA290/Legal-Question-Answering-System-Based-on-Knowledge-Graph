@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+
+{% block title %}动态流程图 - 智能法律咨询系统{% endblock %}
+
+{% block content %}
+    <div class="card shadow-sm p-4">
+        <h2 class="text-center mb-4">动态流程图演示</h2>
+
+        <!-- 用户输入 -->
+        <form id="flowchart-form">
+            <div class="mb-3">
+                <label for="question-input" class="form-label">请输入法律问题：</label>
+                <input type="text" id="question-input" class="form-control" placeholder="请输入问题，例如：盗窃罪怎么判刑">
+            </div>
+            <button type="submit" class="btn btn-primary w-100">生成流程图</button>
+        </form>
+
+        <!-- Mermaid 固定流程图 -->
+        <div id="flowchart-container" class="mt-4 text-center">
+            <pre class="mermaid" id="mermaid-diagram">
+                graph TD
+                    A["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>输入问题</span><br><span style='color:#7F8C8D'>question:</span> <span style='color:#3498DB'>“盗窃罪怎么判刑”</span>"]
+                    B["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>实体识别</span>
+                        <span style='color:#7F8C8D'>entity:</span> <span style='color:#3498DB'>“盗窃罪”</span>"]
+                    C["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>问句分类</span>
+                        <span style='color:#7F8C8D'>type:</span> <span style='color:#3498DB'>“&#91;Crime&#93;的&#91;Punishment&#93;”</span>"]
+                    D["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>知识图谱查询</span>
+                        <span style='color:#7F8C8D'>cypher:</span> <span style='color:#3498DB'>“MATCH (c:Crime)-[:Has_punishment]->(p:Punishment) WHERE c.name = '盗窃罪' RETURN p.content LIMIT 100”</span>"]
+                    E["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>匹配回答模板</span>
+                        <span style='color:#7F8C8D'>temp:</span> <span style='color:#3498DB'>“盗窃罪的刑罚包括”</span>"]
+                    F["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>返回回答结果</span>
+                        <span style='color:#7F8C8D'>answer:</span> <span style='color:#3498DB'>“盗窃罪的刑罚包括：1.XXXX 2.XXX”</span>"]
+                    A --> B
+                    A --> C
+                    B --> D
+                    C --> D
+                    D --> E
+                    E --> F
+            </pre>
+        </div>
+
+        <!-- 说明文字，初始显示，动态流程生成后隐藏 -->
+        <p class="text-muted text-center mt-3" id="flowchart-note">
+            注：此流程图为固定示例，后续将根据用户输入动态生成
+        </p>
+    </div>
+{% endblock %}
+
+{% block extra_script %}
+    <!-- 引入 Mermaid.js -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+
+    <script>
+        mermaid.initialize({
+            {#startOnLoad: true, // 页面加载时渲染默认流程图#}
+            securityLevel: 'loose', // 允许在节点标签中使用 HTML
+            theme: 'default',
+            themeVariables: {
+                primaryColor: '#007BFF',
+                primaryTextColor: '#FFFFFF',
+                secondaryColor: '#F8F9FF',
+                tertiaryColor: '#E0F3FF',
+                lineColor: '#007BFF'
+            }
+        });
+
+        document.getElementById("flowchart-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const question = document.getElementById("question-input").value.trim();
+
+            if (!question) {
+                alert("请输入您的法律问题！");
+                return;
+            }
+
+            // 调用 API 获取流程数据
+            fetch("/flowchart/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify({ "question": question })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        alert("API 错误：" + data.error);
+                        return;
+                    }
+
+                    // 解析 API 返回的数据
+                    const entity = data.entity || "未知";
+                    const questionType = data.type || "未知";
+                    const cypherQuery = data.cypher || "无数据";
+                    const template = data.temp || "无模板";
+                    const answer = data.answer ?
+                        (data.answer.length > 25 ?
+                            `${data.answer.slice(0, 25)}...(完整回答请访问智能问答页面)` :
+                            data.answer) :
+                        "无答案";
+
+                    // 生成 Mermaid 流程图（用 <br> 代替换行）
+                    const flowchartText = `
+                        graph TD
+                            A["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>输入问题</span>
+                                <span style='color:#7F8C8D'>question:</span> <span style='color:#3498DB'>“${question}”</span>"]
+                            B["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>实体识别</span>
+                                <span style='color:#7F8C8D'>entity:</span> <span style='color:#3498DB'>“${entity}”</span>"]
+                            C["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>问句分类</span>
+                                <span style='color:#7F8C8D'>type:</span> <span style='color:#3498DB'>“${questionType}”</span>"]
+                            D["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>知识图谱查询</span>
+                                <span style='color:#7F8C8D'>cypher:</span> <span style='color:#3498DB'>“${cypherQuery}”</span>"]
+                            E["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>匹配回答模板</span>
+                                <span style='color:#7F8C8D'>temp:</span> <span style='color:#3498DB'>“${template}”</span>"]
+                            F["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>返回回答结果</span>
+                                <span style='color:#7F8C8D'>answer:</span> <span style='color:#3498DB'>“${answer}”</span>"]
+                            A --> B
+                            A --> C
+                            B --> D
+                            C --> D
+                            D --> E
+                            E --> F
+                    `;
+
+                    // 获取 Mermaid 容器
+                    let container = document.getElementById("flowchart-container");
+
+                    // 清空原有流程图并重新插入 Mermaid 代码
+                    container.innerHTML = `<pre class="mermaid">${flowchartText}</pre>`;
+
+                    // 重新初始化 Mermaid 解析新流程图
+                    mermaid.init(undefined, container.querySelector(".mermaid"));
+
+                    // 隐藏固定示例说明
+                    document.getElementById("flowchart-note").style.display = 'none';
+                })
+                .catch(error => {
+                    console.error("流程图 API 调用失败:", error);
+                    alert("请求失败，请稍后重试！");
+                });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // 清空渲染容器，恢复原始 Mermaid 代码（如果需要）
+            const container = document.getElementById("mermaid-diagram");
+            container.innerHTML = `
+                graph TD
+                    A["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>输入问题</span><br><span style='color:#7F8C8D'>question:</span> <span style='color:#3498DB'>“盗窃罪怎么判刑”</span>"]
+                    B["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>实体识别</span>
+                        <span style='color:#7F8C8D'>entity:</span> <span style='color:#3498DB'>“盗窃罪”</span>"]
+                    C["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>问句分类</span>
+                        <span style='color:#7F8C8D'>type:</span> <span style='color:#3498DB'>“&#91;Crime&#93;的&#91;Punishment&#93;”</span>"]
+                    D["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>知识图谱查询</span>
+                        <span style='color:#7F8C8D'>cypher:</span> <span style='color:#3498DB'>“MATCH (c:Crime)-[:Has_punishment]->(p:Punishment) WHERE c.name = '盗窃罪' RETURN p.content LIMIT 100”</span>"]
+                    E["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>匹配回答模板</span>
+                        <span style='color:#7F8C8D'>temp:</span> <span style='color:#3498DB'>“盗窃罪的刑罚包括”</span>"]
+                    F["<span style='color:#2C3E50; font-size:larger; font-weight: bolder;'>返回回答结果</span>
+                        <span style='color:#7F8C8D'>answer:</span> <span style='color:#3498DB'>“盗窃罪的刑罚包括：1.XXXX 2.XXX”</span>"]
+                    A --> B
+                    A --> C
+                    B --> D
+                    C --> D
+                    D --> E
+                    E --> F`;
+
+            mermaid.initialize({
+                securityLevel: 'loose', // 允许使用 HTML 标签
+                theme: 'default',
+                themeVariables: {
+                    primaryColor: '#007BFF',
+                    primaryTextColor: '#FFFFFF',
+                    secondaryColor: '#F8F9FF',
+                    tertiaryColor: '#E0F3FF',
+                    lineColor: '#007BFF'
+                }
+            });
+            // 仅解析 Mermaid 容器中未转换的原始代码
+            mermaid.init(undefined, container);
+        });
+
+    </script>
+{% endblock %}

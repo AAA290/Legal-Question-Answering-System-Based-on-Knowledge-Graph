@@ -1,0 +1,94 @@
+{# 基础模板 #}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}智能法律咨询系统{% endblock %}</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 顶部导航 */
+        .nav-header {
+            background: linear-gradient(135deg, #2c3e50 0%, #46aef6 100%);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        /* 左侧边栏 */
+        .sidebar {
+            background-color: #f8f9fa;
+            padding: 20px;
+            height: 100%;
+        }
+        .sidebar a {
+            display: block;
+            color: #333;
+            padding: 10px;
+            text-decoration: none;
+        }
+        .sidebar a:hover, .sidebar a.active {
+            background-color: #3498db;
+            color: #fff;
+            border-radius: 4px;
+        }
+        /* 主体内容区域 */
+        .content {
+            padding: 20px;
+        }
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+<!-- 顶部导航 -->
+<nav class="navbar navbar-expand-lg navbar-dark nav-header">
+    <div class="container">
+        <a class="navbar-brand" href="/index/">法智通</a>
+        <div class="d-flex align-items-center">
+            <a href="/login/" class="btn btn-light btn-sm">退出</a>
+        </div>
+    </div>
+</nav>
+
+<!-- 页面布局：左侧边栏 + 右侧主体 -->
+<div class="container-fluid">
+    <div class="row">
+        <!-- 左侧边栏 -->
+        <nav class="col-md-2 sidebar">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="/qa/" class="{% if request.path == '/qa/' %}active{% endif %}">
+                        <i class="fas fa-balance-scale me-2"></i>法律智能问答
+                    </a>
+                </li>
+                <li>
+                    <a href="/graph/" class="{% if request.path == '/graph/' %}active{% endif %}">
+                        <i class="fas fa-network-wired me-2"></i>知识图谱展示
+                    </a>
+                </li>
+                <li>
+                    <a href="/flowchart/" class="{% if request.path == '/flowchart/' %}active{% endif %}">
+                        <i class="fas fa-project-diagram me-2"></i>流程动态演示
+                    </a>
+                </li>
+                <li>
+                    <a href="/crime_prediction/" class="{% if request.path == '/crime_prediction/' %}active{% endif %}">
+                        <i class="fas fa-gavel me-2"></i>罪名预测分析
+                    </a>
+                </li>
+                <li>
+                    <a href="/comparison/" class="{% if request.path == '/comparison/' %}active{% endif %}">
+                        <i class="fas fa-exchange-alt me-2"></i>问答系统对比
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- 主体内容 -->
+        <main class="col-md-10 content">
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+</div>
+
+{% block extra_script %}{% endblock %}
+</body>
+</html>

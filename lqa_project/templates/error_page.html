@@ -1,0 +1,40 @@
+<!-- error_page.html -->
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>错误提示 - 法律问答系统</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .error-container {
+            max-width: 600px;
+            margin: 5rem auto;
+            padding: 2rem;
+            text-align: center;
+        }
+        .error-icon {
+            font-size: 4rem;
+            color: #e74c3c;
+            margin-bottom: 1.5rem;
+        }
+        .error-actions {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="container">
+    <div class="error-container card">
+        <div class="card-body">
+            <div class="error-icon">!</div>
+            <h2 class="text-danger mb-4">操作未成功</h2>
+            <p class="lead">{{ error }}</p>
+            <div class="error-actions">
+                <a href="/login/" class="btn btn-primary">返回登录页面</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}智能法律咨询系统 - 智能问答{% endblock %}
+
+{% block content %}
+{#    <!-- 用户信息栏 -->#}
+{#    <div class="user-bar mb-4" style="display:flex; align-items:center; padding:15px; background:white; border-radius:12px; box-shadow:0 4px 6px rgba(0,0,0,0.05); border:1px solid #E8F4FF;">#}
+{#        <img src="{% static 'img/user.png' %}" alt="用户头像" style="width:56px; height:56px; border-radius:50%; border:2px solid #007AFF; margin-right:15px;">#}
+{#        <span style="color: #8a63a4; font-weight: bold;">{{ username }}</span>#}
+{#    </div>#}
+
+    <!-- 聊天对话容器 -->
+    <div class="chat-container" id="chat-box" style="background:white; border-radius:18px; padding:30px; overflow-y:auto; box-shadow:0 4px 6px rgba(0,0,0,0.05); border:1px solid #E8F4FF; height:500px;">
+        <div class="message system d-flex">
+            <img src="{% static 'img/bot.png' %}" alt="系统头像" style="width:44px; height:44px; border-radius:50%; margin-right:15px;">
+            <div class="bubble" style="background:#E8F4FF; border:1px solid #B3D8FF; color:#2C3E50; border-radius:20px 20px 20px 4px; padding:16px 24px;">
+                您好！我是法律咨询助手，请问有什么可以帮您？
+            </div>
+        </div>
+    </div>
+
+    <!-- 输入区域 -->
+    <div class="input-area mt-4 d-flex" style="background:white; padding:20px; border-radius:16px; box-shadow:0 4px 6px rgba(0,0,0,0.05); border:1px solid #E8F4FF;">
+        <input type="text" id="question-input" placeholder="输入您的法律问题..." style="flex:1; padding:14px 20px; border:2px solid #E8F4FF; border-radius:12px; font-size:16px;">
+        <button id="submit-btn" style="padding:14px 32px; background:#007AFF; color:white; border:none; border-radius:12px; cursor:pointer; font-weight:600;">
+            发送
+        </button>
+    </div>
+{% endblock %}
+
+{% block extra_script %}
+    {% csrf_token %}
+    <script>
+        const chatBox = document.getElementById('chat-box');
+        const input = document.getElementById('question-input');
+        const submitBtn = document.getElementById('submit-btn');
+
+        // 添加消息函数
+        function addMessage(isUser, text) {
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${isUser ? 'user d-flex flex-row-reverse' : 'system d-flex'}`;
+            const avatar = document.createElement('img');
+            avatar.className = 'avatar';
+            avatar.src = isUser ? "{% static 'img/user.png' %}" : "{% static 'img/bot.png' %}";
+            avatar.style.cssText = "width:44px; height:44px; border-radius:50%; margin:0 15px;";
+            const bubble = document.createElement('div');
+            bubble.className = 'bubble';
+            bubble.textContent = text;
+            bubble.style.cssText = isUser ?
+                "background:#007AFF; color:white; border-radius:20px 20px 4px 20px; padding:16px 24px;" :
+                "background:#E8F4FF; border:1px solid #B3D8FF; color:#2C3E50; border-radius:20px 20px 20px 4px; padding:16px 24px;";
+            messageDiv.appendChild(avatar);
+            messageDiv.appendChild(bubble);
+            chatBox.appendChild(messageDiv);
+            chatBox.scrollTop = chatBox.scrollHeight;
+        }
+
+        // 提交问题函数
+        async function submitQuestion(question) {
+            addMessage(true, question);
+            try {
+                const response = await fetch('/qa/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': '{{ csrf_token }}'
+                    },
+                    body: JSON.stringify({"question": question})
+                });
+                const data = await response.json();
+                addMessage(false, data.answer);
+            } catch (error) {
+                addMessage(false, '服务器繁忙，请稍后再试。');
+            }
+        }
+
+        // 提交问题
+        submitBtn.addEventListener('click', async () => {
+            const question = input.value.trim();
+            if (!question) return;
+            addMessage(true, question);
+            input.value = '';
+            try {
+                const response = await fetch('/qa/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': '{{ csrf_token }}'
+                    },
+                    body: JSON.stringify({"question": question})
+                });
+                const data = await response.json();
+                addMessage(false, data.answer);
+            } catch (error) {
+                addMessage(false, '服务器繁忙，请稍后再试。');
+            }
+        });
+
+        // 回车发送
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                submitBtn.click();
+            }
+        });
+
+        // 读取 URL 中的 query 参数，如果有 question 则自动提交
+        window.addEventListener('load', () => {
+            const params = new URLSearchParams(window.location.search);
+            const preQuestion = params.get('question');
+            if (preQuestion) {
+                // 直接调用提交函数
+                submitQuestion(preQuestion);
+            }
+        });
+    </script>
+
+{% endblock %}

@@ -1,0 +1,62 @@
+03-40-2025 23:40:32 asyncio:DEBUG:Using selector: SelectSelector
+03-40-2025 23:40:32 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+03-40-2025 23:40:32 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+03-40-2025 23:40:32 httpcore.connection:DEBUG:connect_tcp.started host='127.0.0.1' port=8000 local_address=None timeout=30.0 socket_options=None
+03-40-2025 23:40:32 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001B0A5873C48>
+03-40-2025 23:40:32 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+03-40-2025 23:40:32 httpcore.http11:DEBUG:send_request_headers.complete
+03-40-2025 23:40:32 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+03-40-2025 23:40:32 httpcore.http11:DEBUG:send_request_body.complete
+03-40-2025 23:40:32 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+03-40-2025 23:40:32 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'date', b'Thu, 03 Apr 2025 15:40:32 GMT'), (b'server', b'uvicorn'), (b'content-length', b'224'), (b'content-type', b'application/json')])
+03-40-2025 23:40:32 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa_com "HTTP/1.1 200 OK"
+03-40-2025 23:40:32 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+03-40-2025 23:40:32 httpcore.http11:DEBUG:receive_response_body.complete
+03-40-2025 23:40:32 httpcore.http11:DEBUG:response_closed.started
+03-40-2025 23:40:32 httpcore.http11:DEBUG:response_closed.complete
+03-40-2025 23:40:32 httpcore.connection:DEBUG:close.started
+03-40-2025 23:40:32 httpcore.connection:DEBUG:close.complete
+03-40-2025 23:40:33 django.request:ERROR:Internal Server Error: /qa_gpt/
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my_documents\lqa_project\qa\views.py", line 162, in qa_gpt
+    base_url="https://api.chatanywhere.tech/v1"
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_client.py", line 106, in __init__
+    "The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"
+openai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+03-40-2025 23:40:35 asyncio:DEBUG:Using selector: SelectSelector
+03-40-2025 23:40:35 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+03-40-2025 23:40:35 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+03-40-2025 23:40:35 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+03-40-2025 23:40:35 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+03-40-2025 23:40:35 httpx:DEBUG:load_ssl_context verify=True cert=None trust_env=True http2=False
+03-40-2025 23:40:35 httpx:DEBUG:load_verify_locations cafile='D:\\anaconda\\envs\\legal_qa\\lib\\site-packages\\certifi\\cacert.pem'
+03-40-2025 23:40:35 httpcore.connection:DEBUG:connect_tcp.started host='localhost' port=7890 local_address=None timeout=30.0 socket_options=None
+03-40-2025 23:40:35 httpcore.connection:DEBUG:connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x000001B0A582E388>
+03-40-2025 23:40:35 httpcore.http11:DEBUG:send_request_headers.started request=<Request [b'POST']>
+03-40-2025 23:40:35 httpcore.http11:DEBUG:send_request_headers.complete
+03-40-2025 23:40:35 httpcore.http11:DEBUG:send_request_body.started request=<Request [b'POST']>
+03-40-2025 23:40:35 httpcore.http11:DEBUG:send_request_body.complete
+03-40-2025 23:40:35 httpcore.http11:DEBUG:receive_response_headers.started request=<Request [b'POST']>
+03-40-2025 23:40:37 httpcore.http11:DEBUG:receive_response_headers.complete return_value=(b'HTTP/1.1', 502, b'Bad Gateway', [(b'Connection', b'close'), (b'Content-Length', b'0')])
+03-40-2025 23:40:37 httpx:INFO:HTTP Request: POST http://127.0.0.1:8000/api/qa_com "HTTP/1.1 502 Bad Gateway"
+03-40-2025 23:40:37 httpcore.http11:DEBUG:receive_response_body.started request=<Request [b'POST']>
+03-40-2025 23:40:37 httpcore.http11:DEBUG:receive_response_body.complete
+03-40-2025 23:40:37 httpcore.http11:DEBUG:response_closed.started
+03-40-2025 23:40:37 httpcore.http11:DEBUG:response_closed.complete
+03-40-2025 23:40:37 django.request:ERROR:Service Unavailable: /qa_kgqa/
+03-40-2025 23:40:37 django.request:ERROR:Internal Server Error: /qa_gpt/
+Traceback (most recent call last):
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\my_documents\lqa_project\qa\views.py", line 162, in qa_gpt
+    base_url="https://api.chatanywhere.tech/v1"
+  File "D:\anaconda\envs\legal_qa\lib\site-packages\openai\_client.py", line 106, in __init__
+    "The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable"
+openai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+03-47-2025 23:47:24 django.utils.autoreload:INFO:D:\my_documents\lqa_project\qa\views.py changed, reloading.

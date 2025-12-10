@@ -1,0 +1,123 @@
+<!-- login.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>智能法律咨询系统 - 登录注册</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        dialog {
+            border: none;
+            background: none;
+        }
+        dialog::backdrop {
+            background: rgba(0, 0, 0, 0); /* 使背景透明 */
+        }
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+        }
+        .auth-container {
+            max-width: 400px;
+            margin: 5rem auto;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        .form-title {
+            color: var(--primary-color);
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+        .form-control:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+        }
+        .btn-primary {
+            background-color: var(--secondary-color);
+            border: none;
+            padding: 0.5rem 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-light">
+<div class="container">
+    <!-- 登录表单 -->
+    <div class="auth-container">
+        <h2 class="form-title text-center mb-4">欢迎登录法律问答系统</h2>
+        <form action="/login_form/" method="post">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="account" class="form-label">用户名</label>
+                <input type="text" class="form-control" placeholder="用户名" id="account" name="account" required>
+            </div>
+            <div class="mb-4">
+                <label for="password" class="form-label">密码</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="密码" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">登录</button>
+            <div class="text-center mt-3">
+                <span class="text-decoration-none" id = "register">新用户注册</span>
+            </div>
+        </form>
+    </div>
+
+    <!-- 注册表单 -->
+    <dialog>
+        <div class="auth-container">
+            <h2 class="form-title text-center mb-4">注册新账号</h2>
+            <form method="post" action="/register/">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label class="form-label">用户名</label>
+                    <input type="text" class="form-control" name="name"
+                           placeholder="请输入您的姓名" required>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label">登录密码</label>
+                    <input type="password" class="form-control" name="password"
+                           placeholder="请设置登录密码" required>
+                </div>
+                <button class="btn btn-primary w-100" type="submit">立即注册</button>
+            </form>
+        </div>
+    </dialog>
+
+</div>
+
+<script>
+    // 弹窗控制
+    const registerBtn = document.getElementById('register')
+    const dialog = document.querySelector('dialog')
+
+    registerBtn.addEventListener('click', () => {
+        dialog.showModal()
+    })
+
+    // 关闭弹窗（可根据需要添加）
+    dialog.addEventListener('click', (e) => {
+        if(e.target === dialog) dialog.close()
+    })
+</script>
+<script>
+    // 输入框动态效果
+    document.querySelectorAll('.input-field').forEach(input => {
+        input.addEventListener('focus', () => {
+            input.parentElement.style.transform = 'scale(1.02)'
+        })
+        input.addEventListener('blur', () => {
+            input.parentElement.style.transform = 'scale(1)'
+        })
+    })
+
+    // 注册成功自动关闭
+    {% if userid %}
+        setTimeout(() => dialog.close(), 3000)
+    {% endif %}
+</script>
+</div>
+</body>
+</html>

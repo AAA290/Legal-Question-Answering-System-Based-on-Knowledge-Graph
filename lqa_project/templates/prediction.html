@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+
+{% block title %}罪名预测 - 智能法律咨询系统{% endblock %}
+
+{% block content %}
+    <div class="card shadow-sm p-4">
+        <h2 class="text-center mb-4">罪名预测分析</h2>
+        <form id="prediction-form">
+            <div class="mb-3">
+                <label for="case-description" class="form-label">请输入案由：</label>
+                <textarea id="case-description" class="form-control" rows="5" placeholder="请输入案件详情..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">预测罪名</button>
+        </form>
+
+        <div id="prediction-result" class="mt-4 d-none">
+            <h4 class="text-center">预测结果</h4>
+            <ul class="list-group" id="result-list"></ul>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_script %}
+    <script>
+        document.getElementById("prediction-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const description = document.getElementById("case-description").value.trim();
+            if (!description) {
+                alert("请输入案由！");
+                return;
+            }
+
+            fetch("/crime_prediction/", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: JSON.stringify({ "fact": description })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    const resultDiv = document.getElementById("prediction-result");
+                    const resultList = document.getElementById("result-list");
+                    resultList.innerHTML = ""
+
+                    if (data.result.length > 0) {
+                        data.result.forEach(item => {
+                            const listItem = document.createElement("li");
+                            listItem.className = "list-group-item d-flex justify-content-between align-items-center";
+                            listItem.innerHTML = `${item[0]} <span class="badge bg-primary">${(item[1] * 100).toFixed(2)}%</span>`;
+                            resultList.appendChild(listItem);
+                        });
+                        resultDiv.classList.remove("d-none");
+                    } else {
+                        alert("未能预测出罪名，请尝试更详细的案由描述。");
+                    }
+                })
+                .catch(error => console.error("Error:", error));
+        });
+    </script>
+{% endblock %}

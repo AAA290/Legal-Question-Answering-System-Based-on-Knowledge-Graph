@@ -1,0 +1,286 @@
+{% extends "base.html" %}
+{% block title %}智能法律咨询系统 - 知识图谱{% endblock %}
+
+{% block extra_head %}
+    <!-- 引入 Echarts -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts/dist/echarts.min.js"></script>
+    <!-- 引入 jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .toggle-container {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: white;
+            padding: 8px 12px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 34px;
+            height: 20px;
+        }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            transition: .4s;
+            border-radius: 34px;
+        }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+        }
+        input:checked + .slider {
+            background-color: #4CAF50;
+        }
+        input:checked + .slider:before {
+            transform: translateX(14px);
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1>法律知识图谱展示</h1>
+    <div class="controls mb-2">
+        <label for="crimeName">输入罪名:</label>
+        <input type="text" id="crimeName" placeholder="请输入罪名">
+        <button id="searchBtn">查询</button>
+    </div>
+{#    <div class="controls mb-2">#}
+{#        <label for="displayPercent">显示比例(%):</label>#}
+{#        <input type="range" id="displayPercent" min="0" max="100" value="100">#}
+{#        <span id="percentValue">100%</span>#}
+{#    </div>#}
+    <div class="controls mb-2">
+        <label for="toggleLabel">不显示标签</label>
+        <label class="switch">
+            <input type="checkbox" id="toggleLabel" checked>
+            <span class="slider round"></span>
+        </label>
+        <label for="toggleLabel">显示标签</label>
+    </div>
+    <div id="main" style="width:100%; height:600px; border:1px solid #ccc;"></div>
+{% endblock %}
+
+{% block extra_script %}
+    <script>
+        // 关系类型与颜色的映射
+        var relationshipColorMapping = {
+            "Belongs_to": "#5470C6",
+            "Has_constituent": "#91CC75",
+            "Has_punishment": "#f34949",
+            "Has_interpretation": "#332d2d",
+            "Based_on": "#fadc00"
+        };
+
+        var option = {
+            tooltip: {
+                formatter: function(params) {
+                    if (params.dataType === 'node') {
+                        var label = params.data.displayName || params.data.name;
+                        return label;
+                    } else if (params.dataType === 'edge') {
+                        return params.data.relationship;
+                    }
+                }
+            },
+            legend: [{
+                data: ['Crime', 'Law', 'Punishment', 'Constituent', 'Interpretation']
+            }],
+            series: [{
+                type: 'graph',
+                layout: 'force',
+                roam: true,
+                zoom: 2, // 设置初始缩放比例为1.5，值越大图谱显示越大
+                force: {
+                    // 关闭布局动画
+                    layoutAnimation: false
+                },
+                label: {
+                    show: true,
+                    position: 'right',
+                    transformLabel: true, // **关键：让字体随缩放变化**
+                    formatter: function(params) {
+                        var label = params.data.displayName || params.data.name;
+                        if (label && label.length > 6) {
+                            label = label.substring(0, 6) + '...';
+                        }
+                        return label;
+                    }
+                },
+                // edgeLabel 用于在边上显示关系
+                edgeLabel: {
+                    {#show: true,#}
+                    show: false,  //显示了太杂乱
+                    formatter: function(params) {
+                        return params.data.relationship;
+                    }
+                },
+                edgeSymbol: ['circle', 'arrow'],
+                edgeSymbolSize: [4, 10],
+                categories: [
+                    { name: 'Crime' },
+                    { name: 'Law' },
+                    { name: 'Punishment' },
+                    { name: 'Constituent' },
+                    { name: 'Interpretation' }
+                ],
+                data: [],
+                links: [],
+                lineStyle: {
+                    curveness: 0.2
+                }
+            }]
+        };
+
+        var myChart = echarts.init(document.getElementById('main'));
+        myChart.setOption(option);
+
+        // 更新图谱数据的函数
+        function updateGraph(data) {
+            console.log("更新图谱数据:", data);
+            myChart.clear();
+
+            // 构造 id 到索引的映射
+            var idIndexMap = {};
+            data.nodes.forEach(function(node, index) {
+                node.draggable = true;  //为每个节点添加 draggable 属性（允许独立拖动） 没实现
+                if (node.category === "Crime") {
+                    node.symbolSize = 20;  // 大一些
+                } else {
+                    node.symbolSize = 10;  // 默认大小
+                }
+                idIndexMap[node.id] = index;
+            });
+
+            // 转换 links 中的 source 和 target, 同时根据关系类型设置边的颜色
+            data.links.forEach(function(link) {
+                link.source = idIndexMap[link.source];
+                link.target = idIndexMap[link.target];
+                var color = relationshipColorMapping[link.relationship] || '#000';  // 默认黑色
+                link.lineStyle = {
+                    color: color,
+                    curveness: 0.3
+                };
+            });
+
+            option.series[0].data = data.nodes;
+            option.series[0].links = data.links;
+            myChart.setOption(option);
+        }
+
+        // 查询按钮点击事件
+        $('#searchBtn').click(function(){
+            var crimeName = $('#crimeName').val();
+            if (crimeName) {
+                $.ajax({
+                    url: '/query/',
+                    data: {'crime_name': crimeName},
+                    dataType: 'json',
+                    success: function(response){
+                        updateGraph(response);
+                    },
+                    error: function(){
+                        alert('查询出错！');
+                    }
+                });
+            } else {
+                alert('请输入罪名');
+            }
+        });
+
+        // 滑块实时显示百分比
+        $('#displayPercent').on('input change', function(){
+            var percent = $(this).val();
+            $('#percentValue').text(percent + '%');
+        });
+
+        // 节点点击扩展关系
+        myChart.on('click', function(params){
+            if (params.dataType === 'node') {
+                $.ajax({
+                    url: '/expand/',
+                    data: {'node_id': params.data.id},
+                    dataType: 'json',
+                    success: function(response){
+                        updateGraph(response);
+                    },
+                    error: function(){
+                        alert('节点扩展出错！');
+                    }
+                });
+            }
+        });
+
+        myChart.on('graphRoam', function () {
+            let zoom = myChart.getOption().series[0].zoom; // 获取当前缩放比例
+            let shouldShowLabels = zoom > 0.9; // 低于 0.9 隐藏标签
+
+            let updatedOption = {
+                series: [{
+                    label: {
+                        show: shouldShowLabels // 仅更新 label 显示状态
+                    }
+                }]
+            };
+
+            myChart.setOption(updatedOption, false); // 只更新 label，不重新渲染
+        });
+
+        //初始页面（不查询也不点击初始状态时），显示500个
+        document.addEventListener("DOMContentLoaded", function () {
+            let graphData = JSON.parse('{{ graph_data|safe }}'); // 解析后端传来的 JSON 数据
+            if (graphData.nodes.length > 0) {
+                updateGraph(graphData); // 初始化渲染图谱
+            }
+        });
+
+        //以下代码是为了用On/off开关控制标签显示
+        let alwaysShowLabels = false; // 是否始终显示标签
+        // 监听开关切换
+        $('#toggleLabel').change(function () {
+            alwaysShowLabels = this.checked; // 获取开关状态
+            updateLabelVisibility();
+        });
+        // 更新标签可见性
+        function updateLabelVisibility() {
+            let updatedOption = {
+                series: [{
+                    label: {
+                        show: alwaysShowLabels // 直接根据开关状态显示 / 隐藏标签
+                    }
+                }]
+            };
+            myChart.setOption(updatedOption, false); // 只更新 label，避免影响其他内容
+        }
+        // 图表缩放时，始终重置为显示标签状态
+        myChart.on('graphRoam', function () {
+            alwaysShowLabels = true;  // 缩放时强制设置为显示标签
+            $('#toggleLabel').prop('checked', true); // 设置开关为 ON（显示标签）
+            updateLabelVisibility();  // 更新图表中的标签显示
+        });
+    </script>
+{% endblock %}
+
